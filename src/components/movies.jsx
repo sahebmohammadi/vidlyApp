@@ -110,7 +110,7 @@ class Movies extends Component {
     } = this.state;
 
     const { length: count } = this.state.movies;
-    if (count == 0) return <h3>ooops! there are no movies in database</h3>;
+    if (count === 0) return <h3>ooops! there are no movies in database</h3>;
 
     const { totalCount, data: movies } = this.getPagedDate();
 
